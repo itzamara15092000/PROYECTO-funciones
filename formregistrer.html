@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mi Primer LOGIN</title>
+    <link rel="stylesheet" href="fromregister.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi primer LOGIN</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-register">
+            <h4>Iniciar Sesión</h4>
+            <form id="loginForm" onsubmit="return chequeLogin(event)">
+                <input type="email" name="email" id="email" class="controls" placeholder="Ingresa tu email" required>
+                <input type="password" name="password" id="password" class="controls" placeholder="Ingresa tu contraseña" required>
+                <input type="submit" value="Ingresar" class="botons">
+            </form>
+            <p id="LoginMensaje"></p>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos son míos</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>
+

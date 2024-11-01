@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('fondonaranja.jfif');
+    background-size: cover;
+    font-family: 'Calibri', sans-serif;
+}
+
+header {
+    background-color: rgba(51, 46, 59, 0.9);
+    padding: 20px;
+    text-align: center;
+    color: #f1dc61;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f1dc61;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.form-register {
+    width: 500px;
+    background: #332e3b;
+    margin-top: 100px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    color: white;
+    box-shadow: -2px 13px 37px #ffdf77;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #f1dc61;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #f1dc60;
+    font-size: 18px;
+    color: white;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    background: #24303c;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #f1dc60;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #dbc547;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-register .botons:hover {
+    background: #d1b943;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:  #d1b943;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

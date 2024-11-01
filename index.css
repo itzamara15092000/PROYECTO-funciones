@@ -1,0 +1,99 @@
+:root {
+    --primary-color:  #332e3b; /* Color principal */
+    --secondary-color: #343e6e; /* Color secundario */
+    --background-color: #9e9eff; /* Fondo de la página */
+    --text-color: #333; /* Color de texto general */
+    --highlight-color: #4a90e2; /* Color de enfoque o destacado */
+    --white-color: #026846; /* Color claro, usado en textos de contraste */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color); /* Fondo general */
+    color: var(--text-color); /* Color de texto principal */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color); /* Fondo del encabezado */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: var(--white-color); /* Color de texto para el título */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: var(--white-color); /* Texto del párrafo en blanco */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-register {
+    width: 500px;
+    height: auto; /* Permitir que la altura se ajuste según el contenido */
+    background: var(--primary-color); /* Fondo de la caja de formulario */
+    margin: 100px auto; /* Centrado automático */
+    padding: 30px;
+    border-radius: 6px;
+    color: var(--white-color); /* Color de texto dentro del formulario */
+    box-shadow: 0 4px 10px rgba(255, 244, 118, 0.2); /* Sombra para profundidad */
+}
+
+nav {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: var(--white-color); /* Color de las etiquetas de los campos */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: var(--highlight-color); /* Borde de enfoque en input */
+    outline: none;
+}
+
+button {
+    background-color: var(--secondary-color); /* Fondo del botón */
+    color: var(--white-color); /* Texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Efecto de pulsar */
+    margin-top: 15px; /* Añadir espacio arriba del botón */
+}
+
+button:hover {
+    background-color: #455087; /* Fondo del botón al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de pulsación */
+}
+
+#resultado {
+    font-weight: bold;
+    color: var(--highlight-color); /* Color del resultado */
+    font-size: 20px;
+    margin-top: 20px; /* Separación del resultado */
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolver Función del Usuario</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.1.1/math.min.js"></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+    <body>
+        <header>
+            <h1>CALCULADORA PARA FUNCIONES MATEMÁTICAS</h1>
+            <p>La herramienta ideal para ayudarte a resolver tus funciones.</p>
+        </header>
+       
+        <!-- Sección principal de la calculadora -->
+        <section class="form-register">
+            <nav>
+                <h1>Introduce tu Función Matemática</h1>
+
+                <label for="funcion">Ingresa la función de x (ej: x^2 + 2*x + 1):</label>
+                <input type="text" id="funcion">
+
+                <label for="valorX">Ingresa un valor para x:</label>
+                <input type="number" id="valorX">
+
+                <button onclick="resolverFuncion()">Calcular</button>
+               
+                <h4>Resultado: <span id="resultado"></span></h4>
+               
+                <!-- Nuevos elementos para mostrar el dominio y rango -->
+                <h4>Dominio: <span id="dominio"></span></h4>
+                <h4>Rango aproximado: <span id="rango"></span></h4>
+               
+                <h2>Procedimiento:</h2>
+                <ol id="procedimiento"></ol>
+            </nav>
+        </section>
+       
+        <!-- Nueva sección con información sobre funciones -->
+        <section class="info-funciones">
+            <h2>Funciones</h2>
+            <p>Una función matemática es una relación que asigna a cada elemento de un conjunto un único elemento de otro conjunto. Las funciones son fundamentales en matemáticas y se utilizan para describir diversas relaciones y fenómenos.</p>
+           
+            <h3>Ejemplos de Funciones:</h3>
+            <ul>
+                <li><strong>Función Cuadrática:</strong> f(x) = x² - 4x + 3. La gráfica de esta función es una parábola.</li>
+                <li><strong>Función Lineal:</strong> f(x) = 2x + 1. Esta función representa una línea recta.</li>
+                <li><strong>Función Exponencial:</strong> f(x) = 2^x. Esta función crece rápidamente a medida que x aumenta.</li>
+                <li><strong>Función Seno:</strong> f(x) = sin(x). Esta función se utiliza para describir ondas periódicas.</li>
+            </ul>
+           
+            <h3>Propiedades de las Funciones:</h3>
+            <ul>
+                <li><strong>Dominio:</strong> Conjunto de valores de entrada (x) permitidos.</li>
+                <li><strong>Rango:</strong> Conjunto de valores de salida (f(x)) resultantes.</li>
+                <li><strong>Continuidad:</strong> Una función es continua si no presenta saltos o interrupciones en su gráfica.</li>
+            </ul>
+        </section>
+    </body>
+</html>
